@@ -1,5 +1,7 @@
 # Serverless Ninja Guidebook
 
+![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/Banner.png)
+
 Official API Days source code repository for serverless ninja talk.
 
 - Serverless = Efficiency
