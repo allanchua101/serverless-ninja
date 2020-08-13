@@ -39,7 +39,7 @@ printColored "Installing node modules on your directories"
 printSeparator
 
 for d in */ ; do
-    printColored "$d"
+    printListItem "$d"
     cd $d
     npm i &> /dev/null
     cd ..

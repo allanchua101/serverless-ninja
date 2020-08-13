@@ -8,9 +8,10 @@ Official API Days source code repository for serverless ninja talk.
 - AWS Lambda is much better with automation
 - AWS Lambda has a sweet amount of integration points
 - Run shared code using lambda layers
-- Infusing ML/DL models into lambda-based APIs 
+- Infusing ML/DL models into lambda-based APIs
 - Integrating ML APIs with lambda-based APIs
 - Integrating RPA with serverless APIs
+- Code intelligence tools help
 - Design for resiliency and indempotency
 - Serverless has limits
 - VPC and Coldstarts
