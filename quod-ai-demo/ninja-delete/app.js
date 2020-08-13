@@ -1,4 +1,5 @@
-const { getNinjas } = require("./modules/ninja-query");
+const moment = require("moment");
+const { deleteNinjaByID } = require("./modules/delete-ninja-by-id");
 
 let respond = (statusCode, body) => {
   return {
@@ -22,12 +23,24 @@ module.exports = {
     let items = [];
 
     try {
-      items = await getNinjas();
+      let id = event["queryStringParameters"]["id"];
 
-      return respond(200, { items });
+      if (typeof id === "undefined" || !id) {
+        return respond(422, { issue: "ID is required" });
+      }
+
+      await deleteNinjaByID(id);
+
+      let response = {
+        id,
+        isDeleted: true,
+        deletedOn: moment().unix(),
+      };
+
+      return respond(200, response);
     } catch (err) {
       // TODO: Add logging code here
-      return respond(500, { issue: "Internal server error" });
+      return respond(500, { items });
     }
   },
 };

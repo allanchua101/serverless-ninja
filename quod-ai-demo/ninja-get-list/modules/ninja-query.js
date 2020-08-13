@@ -6,6 +6,12 @@ const options = {
 const client = new AWS.DynamoDB.DocumentClient(options);
 
 module.exports = {
+  /**
+   * @async
+   * @function getNinjas
+   * @description Method used for retrieving list of ninjas.
+   * @returns {Promise<object[]>} List of recorded ninjas.
+   */
   async getNinjas() {
     let params = {
       TableName: process.env.NINJA_LIST_TABLE,
