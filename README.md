@@ -11,7 +11,7 @@ Official API Days source code repository for serverless ninja talk.
 - Infusing ML/DL models into lambda-based APIs
 - Integrating ML APIs with lambda-based APIs
 - Integrating RPA with serverless APIs
-- How code intelligence tools help in serverless API development
+- How code intelligence tooling help in serverless API development
 - Design for resiliency and indempotency
 - Serverless has limits
 - VPC and Coldstarts
