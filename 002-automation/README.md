@@ -5,7 +5,7 @@
 Building and managing 100s of serverless APIs can be a daunting task. Lucky for us, AWS provided a nice and smooth way of automating
 work related to Lambda functions which can include:
 
-- Installing of dependencies on each endpoint
+- Installing of dependencies of each API
 - Releasing to multiple environments (dev, uat and prod)
 - Decommissioning of APIs
 - Seeding of Dynamo DBs
