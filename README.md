@@ -2,7 +2,7 @@
 
 ![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/Banner.png)
 
-Official API Days source code repository for serverless ninja talk.
+Chapters
 
 - [Serverless = Efficiency](https://github.com/allanchua101/serverless-ninja/tree/master/001-serverless-efficiency)
 - [AWS Lambda is much better with automation](https://github.com/allanchua101/serverless-ninja/tree/master/002-automation)
