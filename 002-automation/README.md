@@ -19,7 +19,7 @@ This sections showcases different samples of automation related to Serverless AP
 
 - Processes involved in development become repeatable
 - Automated processes are known to be reliable
-- Automated processes are faster than manual upload
+- Automated processes are faster than their manual counterparts
 - Reduces risk of human-related errors 
 - Reduces the impact of developer turnover to software production
 - Scripting is another way of documenting development processes
