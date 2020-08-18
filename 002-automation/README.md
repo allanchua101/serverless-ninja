@@ -31,6 +31,7 @@ You will need to run the following in your machine:
 - AWS CLI
 - AWS SAM CLI
 - AWS Account
+- Shell script execution environment (Linux, MAC, WSL)
 - Named profile for your AWS CLI
 - S3 Bucket for SAM artifact storage
 - NodeJS
