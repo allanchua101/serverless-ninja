@@ -17,6 +17,13 @@ This sections showcases different samples of automation related to Serverless AP
 
 ![Benefits](https://github.com/allanchua101/serverless-ninja/blob/master/docs/002-automation/Benefits.png)
 
+- Processes involved in development become repeatable
+- Automated processes are known to be reliable
+- Automated processes are faster than manual upload
+- Reduces risk of human-related errors 
+- Reduces the impact of developer turnover to software production
+- Scripting is another way of documenting development processes
+
 ### Sample Code Pre-requisites
 
 You will need to run the following in your machine:
