@@ -1,4 +1,4 @@
-# Serverless Ninja Guidebook
+# Serverless Ninja Guidebook :japanese_ogre:
 
 ![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/Banner.png)
 
