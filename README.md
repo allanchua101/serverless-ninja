@@ -9,8 +9,7 @@ Official API Days source code repository for serverless ninja talk.
 - Serverless is not limited to Lambdas
 - AWS Lambda has a sweet amount of integration points
 - Run shared code using lambda layers
-- Infusing ML/DL models into lambda-based APIs
-- Integrating ML APIs with lambda-based APIs
+- Integrating vs Infusing ML in your APIs 
 - Integrating RPA with serverless APIs
 - How code intelligence tooling help in serverless API development
 - Design for resiliency and indempotency
