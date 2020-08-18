@@ -49,3 +49,12 @@ You will need to run the following in your machine:
 │ README.md                     ---> Section documentation
 │ tables.cfn.yaml               ---> Cloud Formation template used for defining DynamoDBs
 ```
+### What Resources will be Provisioned
+
+- 2 Dynamo DB tables
+- 1 API Gateway
+- 1 API Gateway Key
+- 1 API Usage Plan
+- 2 Lambda Functions
+- 2 Cloudwatch Log Streams
+- 2 IAM Policies to access DynamoDBs
