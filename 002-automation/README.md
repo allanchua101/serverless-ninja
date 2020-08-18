@@ -57,4 +57,4 @@ You will need to run the following in your machine:
 - 1 API Usage Plan
 - 2 Lambda Functions
 - 2 Cloudwatch Log Streams
-- 2 IAM Policies to access DynamoDBs
+- 2 IAM Roles to access DynamoDBs
