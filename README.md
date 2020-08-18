@@ -20,6 +20,6 @@ Official API Days source code repository for serverless ninja talk.
 
 I would like to thank the following people who trained me on how to become a Serverless Ninja
 
+- Joel Khoo (Ninja Captain)
 - Nattavit Kamoltham
-- Joel Khoo
 - Michel Do
