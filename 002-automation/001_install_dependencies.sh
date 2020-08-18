@@ -1,4 +1,7 @@
 #!/bin/bash
+# Script used for installing node modules on APIs
+# Written by: Allan A. Chua
+# Created on: August 18, 2020
 printSeparator() {
     echo -e ""
     echo -e ""
