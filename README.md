@@ -12,7 +12,6 @@ Official API Days source code repository for serverless ninja talk.
 - Integrating vs Infusing ML in your APIs 
 - Integrating RPA with serverless APIs
 - How code intelligence tooling help in serverless API development
-- Design for resiliency and indempotency
 - Serverless has limits
 - VPC and Coldstarts
 - Serverless is not for everything.
