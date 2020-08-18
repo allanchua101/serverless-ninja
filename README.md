@@ -16,4 +16,4 @@ Official API Days source code repository for serverless ninja talk.
 - Design for resiliency and indempotency
 - Serverless has limits
 - VPC and Coldstarts
-- Not everything is suitable for serverless
+- Serverless is not for everything.
