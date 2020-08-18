@@ -1,5 +1,7 @@
 # Serverless APIs are way better with automation
 
+![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/002-automation/Banner.png)
+
 Building and managing 100s of serverless APIs can be a daunting task. Lucky for us, AWS provided a nice and smooth way of automating
 work related to Lambda functions which can include:
 
@@ -11,7 +13,11 @@ work related to Lambda functions which can include:
 
 This sections showcases different samples of automation related to Serverless API development.
 
-### Pre-requisites
+### Benefits
+
+![Benefits](https://github.com/allanchua101/serverless-ninja/blob/master/docs/002-automation/Benefits.png)
+
+### Sample Code Pre-requisites
 
 You will need to run the following in your machine:
 
