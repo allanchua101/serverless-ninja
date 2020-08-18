@@ -5,7 +5,7 @@
 Official API Days source code repository for serverless ninja talk.
 
 - Serverless = Efficiency
-- AWS Lambda is much better with automation
+- [AWS Lambda is much better with automation](https://github.com/allanchua101/serverless-ninja/tree/master/002-automation)
 - Serverless is not limited to Lambdas
 - AWS Lambda has a sweet amount of integration points
 - Run shared code using lambda layers
