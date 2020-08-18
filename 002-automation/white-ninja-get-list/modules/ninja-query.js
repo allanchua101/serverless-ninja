@@ -14,7 +14,7 @@ module.exports = {
    */
   async getNinjas() {
     let params = {
-      TableName: process.env.NINJA_LIST_TABLE,
+      TableName: process.env.WHITES_TABLE,
     };
     let output = [];
 
