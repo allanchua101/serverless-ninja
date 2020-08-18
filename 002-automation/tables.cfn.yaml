@@ -1,7 +1,8 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: "AWS::Serverless-2016-10-31"
 Description: >
-  Cloud Formation Stack for grouping DynamoDB tables.
+  Cloud Formation Stack for provisioning the following resources:
+    - DynamoDB tables
 
 Parameters:
   Environment:
