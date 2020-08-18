@@ -21,5 +21,5 @@
 I would like to thank the following people who trained me on how to become a Serverless Ninja
 
 - Joel Khoo (Ninja Captain)
-- Nattavit Kamoltham
-- Michel Do
+- Nattavit Kamoltham (CI Buddy)
+- Michel Do (Chatbot Master)
