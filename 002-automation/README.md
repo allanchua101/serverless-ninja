@@ -1,4 +1,4 @@
-# Serverless APIs are way better with automation
+# Working with Serverless APIs are way more convenient with automation
 
 ![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/002-automation/Banner.png)
 
