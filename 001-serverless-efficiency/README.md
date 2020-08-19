@@ -29,9 +29,15 @@ Since AWS Lambda's billing mode require us to pay for execution time, we can sav
 
 Lambda-based APIs are resilient to disasters as it can automatically switch executions between availability zones in a single AWS region.
 
-### Reduction in Delivery Time
+### Reduction in Development Cost and Time
 
-Since Lambda-based APIs allow us to focus on building our application. We can spend the same budget that we use to spend on paying for activities related to provisioning servers, testing scalability and disaster recovery strategies.
+Since Lambda-based APIs allow us to focus on building our application. We can save the budget that we use to spend on:
+
+- Activities related to provisioning servers
+- Testing Scalability
+- Disaster Recovery Strategies
+
+Since we can now delegate these activities to AWS, we can safely say that we are also reducing the time to deliver production software.
 
 ## Anonymous Case Study
 
