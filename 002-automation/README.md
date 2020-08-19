@@ -20,7 +20,7 @@ This sections showcases different samples of automation related to Serverless AP
 - Processes involved in development become repeatable
 - Automated processes are known to be reliable
 - Automated processes are faster than their manual counterparts
-- Reduces risk of human-related errors 
+- Reduces risk of human-related errors
 - Reduces the impact of developer turnover to software production
 - Scripting is another way of documenting development processes
 
@@ -50,6 +50,7 @@ You will need to run the following in your machine:
 │ README.md                     ---> Section documentation
 │ tables.cfn.yaml               ---> Cloud Formation template used for defining DynamoDBs
 ```
+
 ### What Resources will be Provisioned
 
 - 2 Dynamo DB tables
@@ -59,3 +60,5 @@ You will need to run the following in your machine:
 - 2 Lambda Functions
 - 2 Cloudwatch Log Streams
 - 2 IAM Roles to access DynamoDBs
+
+[Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
