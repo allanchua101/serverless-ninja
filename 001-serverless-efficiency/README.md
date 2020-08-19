@@ -33,4 +33,32 @@ Lambda-based APIs are resilient to disasters as it can automatically switch exec
 
 Since Lambda-based APIs allow us to focus on building our application. We can spend the same budget that we use to spend on paying for activities related to provisioning servers, testing scalability and disaster recovery strategies.
 
+## Anonymous Case Study
+
+![Case Study](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/actual-lambda-cost.png)
+
+I have been working with a team in the past 1 and a half year at the time of this article's writing. We have a total of **71 Cloud Formation stacks** of pure serverless magic and spread of **460+ Lambda functions**. In the month of July 2020, we made a total of **91K API calls** that required **91 hours of actual runtime** in Lambda and ultimately cost us 0 SGD for our development environments.
+
+![SQS](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/sqs-cost.png)
+
+We've also sent 6.6 million queue messages using SQS and payed a whopping 2 SGD for the mentioned month. In contrast, we estimated that using traditional architecture would require us to pay at least 19K SGD with the following assumptions:
+
+![Traditional Architecture](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/traditional-cost.png)
+
+- 1 EC2 t2.xlarge cost 0.185 an hour
+- We would typically require 2 instances of this for HA architecture which would cost .370 SGD an hour
+- If we compute rental time for the whole month of an EC2-based workload it would result to the following formula:
+
+```txt
+# Price of a single API Cluster a month
+.370 X 730 hours a month = $ 270.10 a month.
+
+# Multiply it to 71 API stacks in development environment
+270.10 X 71 = 19,710 SGD / Month
+```
+
+![Cost](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/result.png)
+
+I did not factored-in the manpower required in managing the EC2 fleet and continuously monitoring them which typically requires a significant amount of money in Singapore. I hope that this case study showed how serverless architectures can help organizations in saving production software cost.
+
 [Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
