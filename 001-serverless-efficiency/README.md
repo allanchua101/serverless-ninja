@@ -6,7 +6,7 @@ This section aims to explain how organizations and individuals can benefit from 
 
 ### No Servers to Manage
 
-Serverless architectures do not require **US (Developers, Organizations)** to manage underlying infrastructure. AWS on the other hand manages the server management activities for us so that we can focus on writing our application's features and capabilities.
+Serverless architectures do not require developers neither organizations to manage underlying infrastructure. On the other hand, AWS handles the server management activities on our behalf so that we can focus on writing our application's features and capabilities.
 
 Since serverless-based systems do not require organizations to manage servers. Organizations achieve cost-efficiency in spending money involved in the following activities:
 
