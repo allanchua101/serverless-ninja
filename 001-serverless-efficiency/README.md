@@ -43,7 +43,7 @@ Since we can now delegate these activities to AWS, we can safely say that we are
 
 ![Case Study](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/actual-lambda-cost.png)
 
-I have been working with a team in the past 1 and a half year at the time of this article's writing. We have a total of **71 Cloud Formation stacks** of pure serverless magic and spread of **460+ Lambda functions**. In the month of July 2020, we made a total of **91K API calls** that required **91 hours of actual runtime** in Lambda and ultimately cost us 0 SGD for our development environments.
+I have been working with a team in the past 1 and a half year that uses serverless technologies for 90% of work. We have a total of **71 Cloud Formation stacks** of pure serverless magic and they contain a total of **460+ Lambda functions**. In the month of July 2020, we made a total of **91K API calls** that required **91 hours of actual runtime** in Lambda and ultimately cost us 0 SGD for our development environments.
 
 ![SQS](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/sqs-cost.png)
 
