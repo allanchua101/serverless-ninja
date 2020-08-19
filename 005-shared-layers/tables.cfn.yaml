@@ -1,0 +1,65 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: >
+  Cloud Formation Stack for provisioning the following resources:
+    - DynamoDB tables
+
+Parameters:
+  Environment:
+    Type: String
+    Description: "Environment code of deployment (dev, uat, prod)"
+    AllowedPattern: ".+"
+    AllowedValues:
+      - "dev"
+      - "uat"
+      - "prod"
+
+  AppName:
+    Type: String
+    Description: "Name of application"
+    Default: "ninja-layers"
+
+#  ____
+# |  _ \ ___  ___  ___  _   _ _ __ ___ ___  ___
+# | |_) / _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
+# |  _ <  __/\__ \ (_) | |_| | | | (_|  __/\__ \
+# |_| \_\___||___/\___/ \__,_|_|  \___\___||___/
+
+Resources:
+  NinjaWeapons:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Join ["-", [!Ref Environment, !Ref AppName, "weapons"]]
+      BillingMode: PAY_PER_REQUEST
+      SSESpecification:
+        SSEEnabled: true
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      Tags:
+        - Key: "ENVIRONMENT"
+          Value: !Ref Environment
+        - Key: "APP_NAME"
+          Value: !Ref AppName
+
+  NinjaList:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Join ["-", [!Ref Environment, !Ref AppName, "ninjas"]]
+      BillingMode: PAY_PER_REQUEST
+      SSESpecification:
+        SSEEnabled: true
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      Tags:
+        - Key: "ENVIRONMENT"
+          Value: !Ref Environment
+        - Key: "APP_NAME"
+          Value: !Ref AppName
