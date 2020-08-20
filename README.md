@@ -22,6 +22,10 @@ If you are interested on hearing more about the book that I intend to publish, p
 
 [Twitter](https://twitter.com/ac052790) | [Github](https://github.com/allanchua101) | [Blog](https://www.pogsdotnet.com/)  
 
+### Presentations
+
+[Things You Need to Know to Become a Serverless API Ninja](https://speakerdeck.com/allanchua101/things-you-need-to-know-to-become-a-serverless-api-ninja)
+
 ### Credits
 
 I would like to thank the following people who trained me on how to become a Serverless Ninja
