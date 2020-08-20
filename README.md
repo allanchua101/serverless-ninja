@@ -20,9 +20,7 @@
 
 If you are interested on hearing more about the book that I intend to publish, please feel free to follow me on the following social media sites:
 
-[Twitter](https://twitter.com/ac052790)  
-[Github](https://github.com/allanchua101)  
-[Blog](https://www.pogsdotnet.com/)  
+[Twitter](https://twitter.com/ac052790)[Github](https://github.com/allanchua101)[Blog](https://www.pogsdotnet.com/)  
 
 ### Credits
 
