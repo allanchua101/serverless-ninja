@@ -1,4 +1,4 @@
-# Serverless Efficiency
+# Serverless Efficiency (Blog Post)[https://www.pogsdotnet.com/2020/08/serverless-ninja-serverless-efficiency.html]
 
 ![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/Banner.png)
 
