@@ -32,4 +32,4 @@ I would like to thank the following people who trained me on how to become a Ser
 
 If you are interested on hearing more about the book that I intend to publish, please feel free to follow me on the following social media sites:
 
-[Twitter](https://twitter.com/ac052790) | [Github](https://github.com/allanchua101) | [Blog](https://www.pogsdotnet.com/) | [LinkedIn](https://www.linkedin.com/in/allan-chua-467402103/)
+[Medium](https://medium.com/@ac052790) | [Twitter](https://twitter.com/ac052790) | [Github](https://github.com/allanchua101) | [Blog](https://www.pogsdotnet.com/) | [LinkedIn](https://www.linkedin.com/in/allan-chua-467402103/) 
