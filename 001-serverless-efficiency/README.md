@@ -35,8 +35,8 @@ Lambda-based APIs are resilient to disasters as it can automatically switch exec
 Since Lambda-based APIs allow us to focus on building our application. We can save the budget that we use to spend on:
 
 - Activities related to provisioning servers
-- Testing Scalability
-- Disaster Recovery Strategies
+- Testing cluster scalability & resiliency
+- Designing and implementing disaster recovery systems
 
 Since we can now delegate these activities to AWS, we can safely say that we are also reducing the time to deliver production software.
 
