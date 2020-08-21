@@ -16,12 +16,6 @@
 - [Wrestling with coldstart (Arriving Soon)](https://github.com/allanchua101/serverless-ninja/tree/master/010-wrestling-coldstarts)
 - [Serverless is not for everything(Arriving Soon)](https://github.com/allanchua101/serverless-ninja/tree/master/011-serverless-isnt-everything)
 
-### Follow me
-
-If you are interested on hearing more about the book that I intend to publish, please feel free to follow me on the following social media sites:
-
-[Twitter](https://twitter.com/ac052790) | [Github](https://github.com/allanchua101) | [Blog](https://www.pogsdotnet.com/)  
-
 ### Presentations
 
 [Things You Need to Know to Become a Serverless API Ninja](https://speakerdeck.com/allanchua101/things-you-need-to-know-to-become-a-serverless-api-ninja)
@@ -33,3 +27,9 @@ I would like to thank the following people who trained me on how to become a Ser
 - Joel Khoo (Ninja Captain)
 - Nattavit Kamoltham (CI Buddy)
 - Michel Do (Chatbot Master)
+
+### Follow me
+
+If you are interested on hearing more about the book that I intend to publish, please feel free to follow me on the following social media sites:
+
+[Twitter](https://twitter.com/ac052790) | [Github](https://github.com/allanchua101) | [Blog](https://www.pogsdotnet.com/)  
