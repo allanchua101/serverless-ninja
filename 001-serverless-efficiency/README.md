@@ -1,4 +1,4 @@
-# Serverless Efficiency (Blog Post)[https://www.pogsdotnet.com/2020/08/serverless-ninja-serverless-efficiency.html]
+# Serverless Efficiency
 
 ![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/001-serverless-efficiency/Banner.png)
 
@@ -68,4 +68,5 @@ We've also sent 6.6 million queue messages using SQS and payed a whopping 2 SGD 
 
 I did not factored-in the manpower required in managing the EC2 fleet and continuously monitoring them which typically requires a significant amount of money in Singapore. I hope that this case study showed how serverless architectures can help organizations in saving production software cost.
 
-[Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
+[Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)  
+[Blog Post](https://www.pogsdotnet.com/2020/08/serverless-ninja-serverless-efficiency.html)
