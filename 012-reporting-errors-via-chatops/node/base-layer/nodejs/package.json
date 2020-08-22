@@ -1,0 +1,16 @@
+{
+  "name": "005-shared-layers",
+  "version": "1.0.0",
+  "description": "![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/005-shared-layers/Banner.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "moment": "^2.27.0"
+  }
+}
