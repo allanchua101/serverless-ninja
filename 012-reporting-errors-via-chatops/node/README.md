@@ -22,6 +22,14 @@ This section of the repository aims to showcase a NodeJS implementation of sendi
 
 2. You will need to run the `001_install_dependencies.sh` script to install node modules for the base layer and the API folders.
 3. You will have to copy the `base-layer\nodejs\slack.config.sample.json` file to `base-layer\nodejs\slack.config.json` and provide your own Slack web hook URLs and desired channel name. Without configuring this, you will get our dreaded silent failure issue that can only be diagnosed via CloudWatch logs.
+
+   ```json
+   {
+     "slackChannelName": "#place-your-channel-name",
+     "slackHookUrl": "https://place-your-hook-url-here"
+   }
+   ```
+
 4. After running the shell script, you will have to release the APIs CloudFormation stack by executing `002_release_apis.sh` script. To verify that step 3 worked gracefully, you can go and visit your AWS account's CloudFormation portal and should be able to see a CloudFormation stack named **dev-ninja-alarms**. This will contain the AWS resources listed below:
 
    - 1 API Gateway
