@@ -15,6 +15,7 @@
 - [Serverless have limits (Arriving Soon)](https://github.com/allanchua101/serverless-ninja/tree/master/009-lambda-limits)
 - [Wrestling with coldstart (Arriving Soon)](https://github.com/allanchua101/serverless-ninja/tree/master/010-wrestling-coldstarts)
 - [Serverless is not for everything(Arriving Soon)](https://github.com/allanchua101/serverless-ninja/tree/master/011-serverless-isnt-everything)
+- [Reporting Errors via ChatOps using AWS Lambda & NodeJS](https://github.com/allanchua101/serverless-ninja/tree/master/012-reporting-errors-via-chatops)
 
 ### Presentations
 
