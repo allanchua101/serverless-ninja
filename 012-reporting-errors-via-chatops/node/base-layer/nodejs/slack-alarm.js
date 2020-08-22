@@ -1,4 +1,6 @@
 const axios = require("axios");
+const moment = require("moment");
+const slackConfig = require("./slack.config.json");
 
 let buildMarkdown = (err) => {
   let output = "";
@@ -26,13 +28,12 @@ module.exports = {
   /**
    * @function sendAlert
    * @description Method used for sending ChatOps alerts to slack channel.
-   * @param {string} channelName Name of Slack channel where alert will be raised.
-   * @param {string} hookUrl Web hook URL from slack workplace
    * @param {Error} appError Application Error instance.
+   * @returns {Promise<object>} Promise indicating completion of request.
    */
-  sendAlert(channelName, hookUrl, appError) {
+  sendAlert(appError) {
     let payload = {
-      channel: channelName,
+      channel: slackConfig.slackChannelName,
       attachments: [
         {
           author_name: "Alarm Bot",
@@ -46,7 +47,7 @@ module.exports = {
 
     return new Promise((resolve, reject) => {
       axios
-        .post(hookUrl, payload)
+        .post(slackConfig.slackHookUrl, payload)
         .then(() => {
           resolve({ completed: true });
         })

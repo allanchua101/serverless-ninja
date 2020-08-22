@@ -39,7 +39,7 @@ Raising issues in a channel where an entire team actively listens benefit organi
 
 ## Setting up a Slack Hook URL
 
-- Add reference to document here
+In order to implementations to fully function, you will need to setup a [Slack Incoming Webhook URL](https://slack.com/intl/en-sg/help/articles/115005265063-Incoming-webhooks-for-Slack).
 
 ## Our Solution Architecture
 
@@ -58,3 +58,7 @@ The diagram above explains our desired solution. To break it down into digestibl
 ## Implementations
 
 [NodeJS](https://github.com/allanchua101/serverless-ninja/blob/master/012-reporting-errors-via-chatops/node)
+
+### Site Navigation
+
+[Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
