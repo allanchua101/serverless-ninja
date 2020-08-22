@@ -1,6 +1,6 @@
 # Reporting Errors via ChatOps using AWS Lambda & NodeJS
 
-![Banner](https://github.com/allanchua101/serverless-ninja/tree/master/docs/012-reporting-errors-via-chatops/Banner.png)
+![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/012-reporting-errors-via-chatops/Banner.png)
 
 This article explains how to do error reporting via ChatOps and how it helps organizations react faster to issues arising from application running inside AWS Lambda Functions. In this demo, I will be using NodeJS and will utilize Slack to deliver alarms to important stakeholders:
 
