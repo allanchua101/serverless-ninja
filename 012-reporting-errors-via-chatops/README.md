@@ -1,6 +1,6 @@
 # Reporting Errors via ChatOps using AWS Lambda & NodeJS
 
-![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/012-chatops/Banner.png)
+![Banner](https://github.com/allanchua101/serverless-ninja/tree/master/docs/012-reporting-errors-via-chatops/Banner.png)
 
 This article explains how to do error reporting via ChatOps and how it helps organizations react faster to issues arising from application running inside AWS Lambda Functions. In this demo, I will be using NodeJS and will utilize Slack to deliver alarms to important stakeholders:
 
@@ -12,7 +12,7 @@ This article explains how to do error reporting via ChatOps and how it helps org
 
 ## Benefits
 
-![Benefits](https://github.com/allanchua101/serverless-ninja/blob/master/docs/012-chatops/Benefits.png)
+![Benefits](https://github.com/allanchua101/serverless-ninja/tree/master/docs/012-reporting-errors-via-chatops/Benefits.png)
 
 Before we start coding, I think that its necessary to understand the good things that ChatOps bring to the table so that we can explain to our software development teams the importance of the effort we are putting in building this alarm mechanisms.
 
@@ -43,7 +43,7 @@ Raising issues in a channel where an entire team actively listens benefit organi
 
 ## Our Solution Architecture
 
-![Solution](https://github.com/allanchua101/serverless-ninja/blob/master/docs/012-chatops/alarm-diagram.jpg)
+![Solution](https://github.com/allanchua101/serverless-ninja/tree/master/docs/012-reporting-errors-via-chatops/alarm-diagram.jpg)
 
 The diagram above explains our desired solution. To break it down into digestible pieces:
 
