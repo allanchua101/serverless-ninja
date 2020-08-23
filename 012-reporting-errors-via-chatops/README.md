@@ -59,6 +59,10 @@ The diagram above explains our desired solution. To break it down into digestibl
 
 [NodeJS](https://github.com/allanchua101/serverless-ninja/blob/master/012-reporting-errors-via-chatops/node)
 
+### Publications
+
+[Medium](https://medium.com/@ac052790/serverless-ninja-part-02-reporting-errors-via-chatops-using-aws-lambda-nodejs-8d56dccadc9b) | [Blog](https://www.pogsdotnet.com/2020/08/serverless-ninja-reporting-errors-via.html)
+
 ### Site Navigation
 
 [Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
