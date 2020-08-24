@@ -99,6 +99,8 @@ LifecycleConfiguration:
 
 ### Option 3: Use a S3 Transition Rule to Update Storage Tier of Older records.
 
+![Banner](https://github.com/allanchua101/serverless-ninja/blob/master/docs/013-saving-cost-from-artifact-storage/Transition.png)
+
 You can also implement a slowly shifting transition rule to your artifacts for production environment by ensuring cold objects (Less frequently retrieved) get transitioned to colder tiers for s3. Below is a sample of this implementation:
 
 ```yaml
