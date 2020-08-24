@@ -139,6 +139,6 @@ SAM artifacts stored in S3 buckets can pile up over a good period of time and it
 - Sensible artifact expiration dates vary between organizations and territories.
 - You can implement a set of S3 object lifecycle transition rules to slowly move less-frequent accessed artifacts to colder tiers.
 
-### Site Navigation
+### Repository Navigation
 
-[Go Back To Repository Root](https://github.com/allanchua101/serverless-ninja)
+[Repository Root](https://github.com/allanchua101/serverless-ninja) | [Medium](https://medium.com/@ac052790/how-to-reduce-cost-of-sam-artifact-storage-using-s3-lifecyle-management-cloud-formation-4e18ef0cab1b) | [Blog](https://www.pogsdotnet.com/2020/08/how-to-reduce-cost-of-sam-artifact.html)
