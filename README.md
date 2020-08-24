@@ -7,6 +7,7 @@
 - [Serverless = Efficiency](https://github.com/allanchua101/serverless-ninja/tree/master/001-serverless-efficiency)
 - [AWS Lambda is much better with automation](https://github.com/allanchua101/serverless-ninja/tree/master/002-automation)
 - [Run shared code using lambda layers](https://github.com/allanchua101/serverless-ninja/tree/master/005-shared-layers)
+- [Save cost on artifact storage](https://github.com/allanchua101/serverless-ninja/tree/master/013-saving-cost-from-artifact-storage)
 - [Reporting Errors via ChatOps using AWS Lambda & NodeJS](https://github.com/allanchua101/serverless-ninja/tree/master/012-reporting-errors-via-chatops)
 
 ### Under Development
