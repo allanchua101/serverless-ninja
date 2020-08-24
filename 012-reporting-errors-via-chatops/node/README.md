@@ -14,7 +14,7 @@ This section of the repository aims to showcase a NodeJS implementation of sendi
 
 ### Deploying the Application
 
-1. If you are a Linux or Mac User you need to provide execution permission to shell scripts inside the root of this folder. If you a windows user, go ahead and ignore this step.
+1. If you are a Linux or Mac User you need to provide execution permission to shell scripts inside the root of this folder. If you are a windows user, go ahead and ignore this step.
 
    ```sh
    chmod +x *.sh
