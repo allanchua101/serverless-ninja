@@ -102,10 +102,10 @@ You can also implement a slowly shifting transition rule to your artifacts for p
 ```yaml
 LifecycleConfiguration:
   Rules:
-    - Id: SetToStandardIAAfterTwoYears
+    - Id: SetToStandardIAAfterAYear
       Status: Enabled
       Transitions:
-        - TransitionInDays: "730"
+        - TransitionInDays: "365"
           StorageClass: STANDARD_IA
     - Id: SetToGlacierAfterThreeYears
       Status: Enabled
@@ -121,7 +121,7 @@ The sample above applies the following rules to save cost on S3 storage:
 
 - It shifts warm artifacts to S3 Standard Tier IA after a year
 - It shifts not-so-warm artifacts to S3 Glacier after three years
-- It deletes objects after three years from the storage
+- It deletes objects after seven years from the storage
 
 ## Conclusion
 

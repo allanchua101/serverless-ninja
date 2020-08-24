@@ -32,10 +32,10 @@ Resources:
         !Join ["-", [!Ref AppName, !Ref Environment, "sam-artifacts-c"]]
       LifecycleConfiguration:
         Rules:
-          - Id: SetToStandardIAAfterTwoYears
+          - Id: SetToStandardIAAfterAYear
             Status: Enabled
             Transitions:
-              - TransitionInDays: "730"
+              - TransitionInDays: "365"
                 StorageClass: STANDARD_IA
           - Id: SetToGlacierAfterThreeYears
             Status: Enabled
