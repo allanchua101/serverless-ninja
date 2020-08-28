@@ -1,6 +1,6 @@
 # Building JS-based Hate Speech Classification Model
 
-This section contains a simple implementation of hate speech classification using the following technologies:
+This section contains a simple implementation of hate speech classification model on top of JavaScript using the following technologies:
 
 - NodeJS
 - Natural JS
