@@ -14,9 +14,9 @@ The classification model showcased in this section is used for determining if a 
 - Offensive Language
 - Neither
 
-### Why you did not embed any validation (K-Fold or 75 / 25 % train test split)?
+### Why did you not embed any validation (K-Fold or 75 / 25 % train test split) code?
 
-Splitting and folding of train dataset was not included in this repository because it was mainly targeted at beginners and to quickly on-board them to different ways of deploying machine learning models to AWS Lambda-based APIs.
+Splitting and folding of dataset was not added in this repository to simplify it. The article was targeted at attracting JS developers to start building ML-powered APIs and to quickly on-board them to different ways of deploying machine learning models to Lambda-based APIs.
 
 ### Dataset Credits
 
