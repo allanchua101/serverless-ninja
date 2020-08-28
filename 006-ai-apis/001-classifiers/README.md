@@ -1,4 +1,4 @@
-# Building Classification Hate Speech Classifiers
+# Building JS-based Hate Speech Classification Model
 
 This section contains a simple implementation of hate speech classification using the following technologies:
 
