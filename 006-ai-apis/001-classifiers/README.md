@@ -27,8 +27,8 @@ This repository is utilizing a dataset that t-davidson built on this github [rep
 The Naive Bayes classifier produced the following results:
 
 ```txt
-Accurate: 17706 items
-Missed: 7077 items
+Accurate: 17,706 out of 24,783 items
+Missed: 7,077 out of 24,783 items 
 Accuracy: 71.44
 Error Rate: 28.56
 ```
