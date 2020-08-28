@@ -21,3 +21,17 @@ Splitting and folding of train dataset was not included in this repository becau
 ### Dataset Credits
 
 This repository is utilizing a dataset that t-davidson built on this github [repository](https://github.com/t-davidson/hate-speech-and-offensive-language).
+
+### Natural JS - Naive Bayes Results
+
+The Naive Bayes classifier produced the following results:
+
+```txt
+Inferring Item 24783 out of 24783
+Accurate: 17706 items
+Missed: 7077 items
+Accuracy: 71.44
+Error Rate: 28.56
+```
+
+71.55% accuracy is not that bad! If you are automating curation of chatbot messages, this classification model can remove 71.55% of work from your staff.
