@@ -1,0 +1,16 @@
+{
+  "name": "006-server-http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-http": "^2.5.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
