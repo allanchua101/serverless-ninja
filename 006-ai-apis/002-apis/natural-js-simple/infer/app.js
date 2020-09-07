@@ -1,54 +1,47 @@
-const natural = require("natural");
-const naiveBayes = natural.BayesClassifier;
-const MODEL_PATH = "./weights/hate-speech-classifier.json";
-
-let respond = (statusCode, body) => {
-  return {
-    statusCode: statusCode,
-    body: JSON.stringify(body),
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "Content-Type,x-api-key",
-      "Access-Control-Allow-Methods": "OPTIONS,POST,GET,DELETE",
-    },
-  };
-};
-
-let loadFrozenModel = () => {
-  return new Promise((resolve, reject) => {
-    naiveBayes.load(MODEL_PATH, null, (err, classifier) => {
-      if (err) {
-        reject(err);
-      }
-
-      resolve(classifier);
-    });
-  });
-};
+const { buildResponse } = require("./helpers/response-builders");
+const { loadFrozenModel } = require("./helpers/model-loader");
+let model = null;
 
 module.exports = {
   async execute(event, context) {
     try {
+      // if request is CORS-related, quickly respond
       if (event.httpMethod.toLowerCase() === "options") {
-        return respond(200, {});
+        return buildResponse(200, {});
       }
 
+      // if request body is not found,
+      // respond with un-processable entity (422)
       if (!event.body) {
-        return respond(422, { issue: "Request payload is missing" });
+        return buildResponse(422, { issue: "Request payload is missing" });
       }
+
+      // Parse JSON body
       let input = JSON.parse(event.body);
 
+      // If text to classify is not provided,
+      // respond with un-processable entity (422)
       if (!input.text) {
-        return respond(422, { issue: "Please provide an input text" });
+        return buildResponse(422, { issue: "Please provide an input text" });
       }
 
-      let model = await loadFrozenModel(input.text);
+      // If request is valid, processable, and
+      // the lambda invocation is a cold start
+      if (model === null) {
+        // load frozen model from disk.
+        model = await loadFrozenModel();
+      }
+
+      // Run classification on input text.
       let category = model.classify(input.text);
 
-      return respond(200, { category });
+      // Respond with 200 status code
+      // and include model-inferred category
+      return buildResponse(200, { category });
     } catch (err) {
-      return respond(500, { issue: "Internal server error" });
+      // Gracefully handle internal server issues
+      // and respond with 500 status code
+      return buildResponse(500, { issue: "Internal server error" });
     }
   },
 };

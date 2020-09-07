@@ -102,7 +102,8 @@ Resources:
   ApiHateInference:
     Type: "AWS::Serverless::Function"
     Properties:
-      FunctionName: !Join ["-", [!Ref Environment, !Ref AppName, "get-whites"]]
+      FunctionName:
+        !Join ["-", [!Ref Environment, !Ref AppName, "infer-hate-speech"]]
       CodeUri: infer/
       Handler: app.execute
       Timeout: 30 # Seconds
