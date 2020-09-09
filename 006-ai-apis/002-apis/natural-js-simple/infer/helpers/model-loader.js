@@ -1,15 +1,16 @@
 const natural = require("natural");
-const MODEL_PATH = "../weights/hate-speech-classifier.json";
+const naiveBayes = natural.BayesClassifier;
 
 module.exports = {
   /**
    * @function loadFrozenModel
    * @description Method used for loading our frozen classifier
+   * @params {string} modelPath Path of model weights
    * @returns {Promise<natural.BayesClassifier>} Instance of text classifier
    */
-  loadFrozenModel() {
+  loadFrozenModel(modelPath) {
     return new Promise((resolve, reject) => {
-      natural.BayesClassifier.load(MODEL_PATH, null, (err, classifier) => {
+      naiveBayes.load(modelPath, null, (err, classifier) => {
         if (err) {
           reject(err);
         }

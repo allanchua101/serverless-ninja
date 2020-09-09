@@ -108,7 +108,7 @@ Resources:
       Handler: app.execute
       Timeout: 30 # Seconds
       Runtime: nodejs10.x
-      MemorySize: 512
+      MemorySize: 256
       Environment:
         Variables:
           API_NAME: "REST API - Infer Hate"

@@ -1,5 +1,6 @@
 const { buildResponse } = require("./helpers/response-builders");
 const { loadFrozenModel } = require("./helpers/model-loader");
+const MODEL_PATH = "./weights/hate-speech-classifier.json";
 let model = null;
 
 module.exports = {
@@ -29,7 +30,7 @@ module.exports = {
       // the lambda invocation is a cold start
       if (model === null) {
         // load frozen model from disk.
-        model = await loadFrozenModel();
+        model = await loadFrozenModel(MODEL_PATH);
       }
 
       // Run classification on input text.
@@ -39,6 +40,7 @@ module.exports = {
       // and include model-inferred category
       return buildResponse(200, { category });
     } catch (err) {
+      console.log(err.message);
       // Gracefully handle internal server issues
       // and respond with 500 status code
       return buildResponse(500, { issue: "Internal server error" });

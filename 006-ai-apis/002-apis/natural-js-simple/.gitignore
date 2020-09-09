@@ -1,3 +1,5 @@
+apis.cfn.yaml
+package-lock.json
 # Logs
 logs
 *.log
