@@ -40,42 +40,33 @@ Resources:
   # / /_\\ (_| | ||  __/\ V  V / (_| | |_| |
   # \____/\__,_|\__\___| \_/\_/ \__,_|\__, |
   #                                   |___/
-  FactionsApiGateway:
+  InferenceApiGateway:
     Type: "AWS::Serverless::Api"
     Properties:
       StageName: "v1"
       Cors: "'*'"
       Auth:
         ApiKeyRequired: true
-      GatewayResponses:
-        UNAUTHORIZED:
-          StatusCode: 401
-          ResponseParameters:
-            Headers:
-              Access-Control-Expose-Headers: "'WWW-Authenticate'"
-              Access-Control-Allow-Origin: "'*'"
-              WWW-Authenticate: >-
-                'Bearer realm="admin"'
 
-  FactionsApiKey:
+  InferenceApiKey:
     Type: AWS::ApiGateway::ApiKey
-    DependsOn: FactionsApiGateway
+    DependsOn: InferenceApiGateway
     Properties:
       Name: !Join ["-", [!Ref AWS::StackName, "api-key"]]
       Description: "API key used for invoking factions api gateway"
       Enabled: true
       GenerateDistinctId: false
       StageKeys:
-        - RestApiId: !Ref FactionsApiGateway
-          StageName: !Ref FactionsApiGateway.Stage
+        - RestApiId: !Ref InferenceApiGateway
+          StageName: !Ref InferenceApiGateway.Stage
 
-  FactionsUsagePlan:
+  InferenceUsagePlan:
     Type: AWS::ApiGateway::UsagePlan
-    DependsOn: FactionsApiGateway
+    DependsOn: InferenceApiGateway
     Properties:
       ApiStages:
-        - ApiId: !Ref FactionsApiGateway
-          Stage: !Ref FactionsApiGateway.Stage
+        - ApiId: !Ref InferenceApiGateway
+          Stage: !Ref InferenceApiGateway.Stage
       Description: !Join [" ", [!Ref AWS::StackName, "usage plan"]]
       Quota:
         Limit: 10000
@@ -85,13 +76,13 @@ Resources:
         RateLimit: 1000
       UsagePlanName: !Join ["-", [!Ref AWS::StackName, "usage-plan"]]
 
-  FactionsApiUsagePlanKey:
+  InferenceApiUsagePlanKey:
     Type: AWS::ApiGateway::UsagePlanKey
-    DependsOn: FactionsUsagePlan
+    DependsOn: InferenceUsagePlan
     Properties:
-      KeyId: !Ref FactionsApiKey
+      KeyId: !Ref InferenceApiKey
       KeyType: API_KEY
-      UsagePlanId: !Ref FactionsUsagePlan
+      UsagePlanId: !Ref InferenceUsagePlan
 
   #    _      ___ _____
   #   /_\    / _ \\_   \___
@@ -117,7 +108,7 @@ Resources:
         PostResource:
           Type: "Api"
           Properties:
-            RestApiId: !Ref FactionsApiGateway
+            RestApiId: !Ref InferenceApiGateway
             Path: "/infer/hate-speech"
             Method: "POST"
             Auth:
@@ -125,7 +116,7 @@ Resources:
         Options:
           Type: "Api"
           Properties:
-            RestApiId: !Ref FactionsApiGateway
+            RestApiId: !Ref InferenceApiGateway
             Path: "/infer/hate-speech"
             Method: OPTIONS
             Auth:
